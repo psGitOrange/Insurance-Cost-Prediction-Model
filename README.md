@@ -16,7 +16,7 @@ Numeric :- Age (18 to 66 years), Height (145 cm to 188 cm), Weight (51 kg to 132
 
 Binary (0 or 1):- Diabetes, Blood Pressure Problems, Any Transplants, Any Chronic Diseases, Known Allergies, History Of Cancer In Family, Number Of Major Surgeries
 
-### [Medium Blog Post](https://medium.com/@pavansingu007/predict-health-insurance-cost-with-machine-learning-and-streamlit-ac95e0ff6b33)
+### [Medium Blog Post](https://medium.com/@pavansingu007/predict-health-insurance-cost-with-machine-learning-and-streamlit-ac95e0ff6b33): Predict Health Insurance Cost with Machine Learning and Streamlit
 Read the above Blog post for easy digest of Machine Learning modelling on the topic  
 
 ### Running Streamlit App 
