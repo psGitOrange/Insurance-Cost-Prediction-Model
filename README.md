@@ -11,19 +11,29 @@ Leverage machine learning techniques, to predict more accurately the insurance c
 - Linear Regression, Random Forest, XGBoost
 - Cross Validation, Hyperparameter Tuning
 
+**Data Profile:**
+Numeric :- Age (18 to 66 years), Height (145 cm to 188 cm), Weight (51 kg to 132 kg), Premium Price (₹15,000 to ₹40,000 )
+
+Binary (0 or 1):- Diabetes, Blood Pressure Problems, Any Transplants, Any Chronic Diseases, Known Allergies, History Of Cancer In Family, Number Of Major Surgeries
+
 [Medium Blog Post](https://medium.com/@pavansingu007/predict-health-insurance-cost-with-machine-learning-and-streamlit-ac95e0ff6b33)
 
 ### Running Streamlit App 
 Run the command:
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 Streamlit launches the app on a local port 8501, making it ready to serve predictions in real time.
 
-**Data Profile:**
-Numeric :- Age (18 to 66 years), Height (145 cm to 188 cm), Weight (51 kg to 132 kg), Premium Price (₹15,000 to ₹40,000 )
+### Running Flask App 
+Run the command:
+```bash
+flask --app flask_app.py --debug run
+```
+Flask launches the app on a local port 5000, use endpoint `/predict` to serve predictions in real time.
 
-Binary (0 or 1):- Diabetes, Blood Pressure Problems, Any Transplants, Any Chronic Diseases, Known Allergies, History Of Cancer In Family, Number Of Major Surgeries
+Both the apps use **saved** machine learning **models** fit on example dataset using `joblib`.</br>
+with fitted **scaler** to transform the input data, pass it to model to **predict** Premium price of individuals 
 
 ### Summary
 
